@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
-import { CameraOutlined, StarFilled, CiCircleFilled } from '@ant-design/icons';
+import { CameraOutlined, StarFilled, CiCircleFilled, HomeOutlined, StarTwoTone } from '@ant-design/icons';
 import { Menu } from 'antd';
+import Home from './Home';
 
 const items = [
   {
@@ -37,6 +38,24 @@ const items = [
       </a>
     ),
     key: 'alipay',
+  },
+  {
+    label: (
+      <a href="https://eloquent-pie-3e7822.netlify.app//pictures" rel="noopener noreferrer">
+        Home
+      </a>
+    ),
+    key: 'Home',
+    icon: <HomeOutlined />,
+  },
+  {
+    label: (
+      <a href="https://eloquent-pie-3e7822.netlify.app//befaft" rel="noopener noreferrer">
+        Before After
+      </a>
+    ),
+    key: 'BeforeAfter',
+    icon: <StarTwoTone />,
   },
 ];
 

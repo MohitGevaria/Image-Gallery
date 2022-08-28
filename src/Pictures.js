@@ -39,7 +39,7 @@ const Pictures = () => {
             {data.map((item, index) => {
                 return(
                     <div className="pics" key={index} onClick={() => getImg(item.imgsrc)}>
-                        <img src={item.imgsrc} alt="image" style={{"width": "100%"}} />
+                        <img src={item.imgsrc} alt="image" style={{"width": "100%"}} loading="lazy"/>
                     </div>
                 )
             })}
