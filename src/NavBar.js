@@ -41,7 +41,7 @@ const items = [
   },
   {
     label: (
-      <a href="https://eloquent-pie-3e7822.netlify.app//pictures" rel="noopener noreferrer">
+      <a href="https://eloquent-pie-3e7822.netlify.app/pictures" rel="noopener noreferrer">
         Home
       </a>
     ),
@@ -50,7 +50,7 @@ const items = [
   },
   {
     label: (
-      <a href="https://eloquent-pie-3e7822.netlify.app//befaft" rel="noopener noreferrer">
+      <a href="https://eloquent-pie-3e7822.netlify.app/befaft" rel="noopener noreferrer">
         Before After
       </a>
     ),
@@ -60,7 +60,7 @@ const items = [
 ];
 
 const NavBar = () => {
-  const [current, setCurrent] = useState('mail');
+  const [current, setCurrent] = useState('Home');
 
   const onClick = (e) => {
     setCurrent(e.key);
