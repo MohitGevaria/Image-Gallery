@@ -18,7 +18,7 @@ const Cards = () => (
             margin: "22px",
             backgroundColor: 'rgba(0, 0, 0, 0.1)'
         }}
-        cover={<img alt="example" style={{"width":"350px", "height":"300px"}} src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?cs=srgb&dl=pexels-pixabay-60597.jpg&fm=jpg" />}
+        cover={<img alt="image" style={{"width":"350px", "height":"300px"}} src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?cs=srgb&dl=pexels-pixabay-60597.jpg&fm=jpg" />}
     >
         <Meta title="Europe Street beat" description="www.instagram.com" />
     </Card>
@@ -33,7 +33,7 @@ const Cards = () => (
             margin: "22px",
             backgroundColor: 'rgba(0, 0, 0, 0.1)'
         }}
-        cover={<img alt="example" style={{"width":"350px", "height":"300px"}} src="https://wallpaperaccess.com/full/87541.jpg" />}
+        cover={<img alt="image" style={{"width":"350px", "height":"300px"}} src="https://wallpaperaccess.com/full/87541.jpg" />}
     >
         <Meta title="Europe Street beat" description="www.instagram.com" />
     </Card>
@@ -48,7 +48,7 @@ const Cards = () => (
             margin: "22px",
             backgroundColor: 'rgba(0, 0, 0, 0.1)'
         }}
-        cover={<img alt="example" style={{"width":"350px", "height":"300px"}} src="https://wallpaperaccess.com/full/87541.jpg" />}
+        cover={<img alt="image" style={{"width":"350px", "height":"300px"}} src="https://wallpaperaccess.com/full/87541.jpg" />}
     >
         <Meta title="Europe Street beat" description="www.instagram.com" />
     </Card>
@@ -63,7 +63,7 @@ const Cards = () => (
             margin: "22px",
             backgroundColor: 'rgba(0, 0, 0, 0.1)'
         }}
-        cover={<img alt="example" style={{"width":"350px", "height":"300px"}} src="https://wallpaperaccess.com/full/87541.jpg" />}
+        cover={<img alt="image" style={{"width":"350px", "height":"300px"}} src="https://wallpaperaccess.com/full/87541.jpg" />}
     >
         <Meta title="Europe Street beat" description="www.instagram.com" />
     </Card>

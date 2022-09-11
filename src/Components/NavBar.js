@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import './index.css';
-import { CameraOutlined, StarFilled, CiCircleFilled, HomeOutlined, StarTwoTone } from '@ant-design/icons';
+import { CameraOutlined, StarFilled, CiCircleFilled, HomeOutlined, UploadOutlined, PictureTwoTone } from '@ant-design/icons';
 import { Menu } from 'antd';
-import Home from './Home';
-
 const items = [
   {
     label: 'Personal',
@@ -21,14 +19,14 @@ const items = [
     key: 'Wildlife',
     icon: <CiCircleFilled />,
     children: [
-        {
-            label: 'Dogs',
-            key: 'Cats',
-        },
-        {
-            label: 'Cats',
-            key: 'Dogs',
-        },
+      {
+        label: 'Dogs',
+        key: 'Cats',
+      },
+      {
+        label: 'Cats',
+        key: 'Dogs',
+      },
     ],
   },
   {
@@ -41,7 +39,7 @@ const items = [
   },
   {
     label: (
-      <a href="https://eloquent-pie-3e7822.netlify.app/pictures" rel="noopener noreferrer">
+      <a href="/pictures" rel="noopener noreferrer">
         Home
       </a>
     ),
@@ -50,12 +48,21 @@ const items = [
   },
   {
     label: (
-      <a href="https://eloquent-pie-3e7822.netlify.app/befaft" rel="noopener noreferrer">
-        Before After
+      <a href="/recents" rel="noopener noreferrer">
+        Recents
       </a>
     ),
-    key: 'BeforeAfter',
-    icon: <StarTwoTone />,
+    key: 'Recents',
+    icon: <PictureTwoTone />,
+  },
+  {
+    label: (
+      <a href="/upload" rel="noopener noreferrer">
+        Upload
+      </a>
+    ),
+    key: 'upload',
+    icon: <UploadOutlined />,
   },
 ];
 
@@ -66,7 +73,7 @@ const NavBar = () => {
     setCurrent(e.key);
   };
 
-  return <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} theme={'dark'} />;
+  return <Menu onSelect={onClick} selectedKeys={[current]} mode="horizontal" items={items} theme={'dark'} />;
 };
 
 export default NavBar;
